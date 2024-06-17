@@ -1,0 +1,36 @@
+@import "/src/styles/custom-bootstrap.scss";
+
+.inputBox_container {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 14em;
+    width: fit-content;
+    height: fit-content;
+    background-color: $secondary;
+    border-radius: 0.8em;
+    overflow: hidden;
+  }
+  
+  .search_icon {
+    z-index: 2;
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: $dark;
+  }
+  
+  .inputBox {
+    z-index: 2;
+    background-color: transparent;
+    color: $dark;
+    outline: none;
+    width: 100%;
+    border: 0;
+    padding: 0.5em 1.5em 0.5em 0;
+    font-size: 1em;
+  }
+  
+  ::placeholder {
+    color: $gray-600;
+  }

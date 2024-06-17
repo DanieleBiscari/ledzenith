@@ -8,4 +8,33 @@ $danger: #FF8686;
 $light: #F2F2F2;
 $dark: #333333;
 
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// NAVBAR
+.nav-link{
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+// DROPDOWN 
+.dropdown-menu{
+    padding: 0 0 !important;  
+}
+.dropdown-item:hover{
+    background-color: $secondary !important;
+}
+span[class="nav-link dropdown-toggle outline-ring show"] {
+  outline: 1.5px solid $light !important;
+}
+
+
 @import "bootstrap";
