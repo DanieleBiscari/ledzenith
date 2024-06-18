@@ -4,7 +4,7 @@ body {
     background-color: $light;
 }
 
-h1,h2,h3{
+h1,h2,h3,p{
     margin-bottom: 0 !important;
 }
 
@@ -17,4 +17,14 @@ h1,h2,h3{
 }
 .dark-fill{
     fill: $dark;
+}
+
+.divider{
+    width: 100%;
+    border-top: 2px solid black;
+    margin: 2rem 0;
+}
+
+#quantityProduct{
+    width: 3.5rem;
 }
