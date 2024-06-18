@@ -1,8 +1,11 @@
 import React from "react";
 
-const Cart = () => {
+const Cart = ({bsToggle, bsTarget}) => {
   return (
     <svg
+      data-bs-toggle={bsToggle}
+      data-bs-target={"#"+bsTarget}
+      aria-controls={bsTarget}    
       viewBox="-2.4 -2.4 28.80 28.80"
       role="button"
       className="z-2"

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Dropdown = ({name, elements}) => {
   return (
-    <div className="dropdown">
+    <li className="dropdown">
       <span
         className="nav-link dropdown-toggle outline-ring"
         role="button"
@@ -13,7 +13,7 @@ const Dropdown = ({name, elements}) => {
         {name}
       </span>
 
-      <ul className="dropdown-menu">
+      <ul id="navbar-dropdown" className="dropdown-menu">
         {elements.map((el, index) => (
             <li key={index + el.name}>
                 <NavLink className="dropdown-item" to={el.link}>
@@ -21,12 +21,8 @@ const Dropdown = ({name, elements}) => {
                 </NavLink>
             </li>
         ))}
-        
-        {/* <li>
-          <hr className="dropdown-divider" />
-        </li> */}
       </ul>
-    </div>
+    </li>
   );
 };
 
